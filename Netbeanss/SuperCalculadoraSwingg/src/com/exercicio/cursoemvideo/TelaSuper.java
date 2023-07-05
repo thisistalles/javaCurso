@@ -26,10 +26,25 @@ public class TelaSuper extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jSpinner2 = new javax.swing.JSpinner();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        lblD = new javax.swing.JLabel();
+        lblC = new javax.swing.JLabel();
+        lblQ = new javax.swing.JLabel();
+        lblR = new javax.swing.JLabel();
+        lblA = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+
+        jScrollPane1.setViewportView(jEditorPane1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,6 +63,40 @@ public class TelaSuper extends javax.swing.JFrame {
             }
         });
 
+        jSpinner2.setFont(new java.awt.Font("Serif", 1, 12)); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabel3.setText("Resto da Divisão por 2");
+
+        jLabel4.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabel4.setText("Elevado ao Cubo");
+
+        jLabel5.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabel5.setText("Raiz Quadrada");
+
+        jLabel6.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabel6.setText("Raiz Cúbica");
+
+        jLabel7.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        jLabel7.setText("Valor Absoluto");
+
+        lblD.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        lblD.setText("0");
+
+        lblC.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        lblC.setText("0");
+
+        lblQ.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        lblQ.setText("0");
+
+        lblR.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        lblR.setText("0");
+
+        lblA.setFont(new java.awt.Font("Serif", 1, 14)); // NOI18N
+        lblA.setText("0");
+
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/calculator-icon.png"))); // NOI18N
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -56,14 +105,35 @@ public class TelaSuper extends javax.swing.JFrame {
                 .addGap(118, 118, 118)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addGap(19, 19, 19)
-                .addComponent(jLabel2)
-                .addGap(33, 33, 33)
-                .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addContainerGap())
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(18, 18, 18)
+                        .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6))
+                        .addGap(101, 101, 101)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lblD)
+                            .addComponent(lblC)
+                            .addComponent(lblA, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblR, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblQ, javax.swing.GroupLayout.Alignment.TRAILING))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 135, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addGap(193, 193, 193))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(208, 208, 208))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -77,9 +147,32 @@ public class TelaSuper extends javax.swing.JFrame {
                             .addComponent(jLabel2)
                             .addComponent(jSpinner2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(23, 23, 23)
                         .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(250, Short.MAX_VALUE))
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(lblD))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel4)
+                            .addComponent(lblC))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(lblQ))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel6)
+                            .addComponent(lblR))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel7)
+                            .addComponent(lblA)))
+                    .addComponent(jLabel8))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
@@ -87,6 +180,9 @@ public class TelaSuper extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        
+        
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -126,8 +222,21 @@ public class TelaSuper extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSpinner jSpinner2;
+    private javax.swing.JLabel lblA;
+    private javax.swing.JLabel lblC;
+    private javax.swing.JLabel lblD;
+    private javax.swing.JLabel lblQ;
+    private javax.swing.JLabel lblR;
     // End of variables declaration//GEN-END:variables
 }
