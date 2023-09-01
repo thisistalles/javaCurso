@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db4533f5-c55f-4123-9cb7-5590acf54a22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/JavaCursoUndemy/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCursoUndemy/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCursoUndemy/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCursoUndemy/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCursoUndemy/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCursoUndemy/JavaCursoUndemy.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaCursoUndemy/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/PrimieiroProjeto.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/exercicio/exercicioFixacao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimieiroProjeto/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PrimieiroProjeto/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,30 +39,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/javaCurso/UndemyCurso&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.language&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "E:/javaCurso/UndemyCurso",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "configurable.group.language"
   }
-}</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="UndemyCurso" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="UndemyCurso" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
