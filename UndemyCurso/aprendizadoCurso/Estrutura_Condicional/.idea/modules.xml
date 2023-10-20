@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AprendizadoAula34/AprendizadoAula34.iml" filepath="$PROJECT_DIR$/AprendizadoAula34/AprendizadoAula34.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Estrutura_Condicional.iml" filepath="$PROJECT_DIR$/.idea/Estrutura_Condicional.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ternary_conditional_expression/Ternary_conditional_expression.iml" filepath="$PROJECT_DIR$/Ternary_conditional_expression/Ternary_conditional_expression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/_38_Switch_Caseexemplo/_38_Switch_Caseexemplo.iml" filepath="$PROJECT_DIR$/_38_Switch_Caseexemplo/_38_Switch_Caseexemplo.iml" />
+    </modules>
+  </component>
+</project>
