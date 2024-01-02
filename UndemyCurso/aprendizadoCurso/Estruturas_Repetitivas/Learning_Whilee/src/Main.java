@@ -16,3 +16,4 @@ public class Main {
         sc.close();
     }
 }
+//aprendendo a usar while
