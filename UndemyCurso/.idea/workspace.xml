@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db4533f5-c55f-4123-9cb7-5590acf54a22" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/PrimieiroProjeto.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimeiroProjeto/src/exercicio/exercicioFixacao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimieiroProjeto/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PrimieiroProjeto/.idea/workspace.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="db4533f5-c55f-4123-9cb7-5590acf54a22" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,11 +33,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "E:/javaCurso/UndemyCurso",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/javaCurso/UndemyCurso/aprendizadoCurso/Estruturas_Repetitivas",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.language"
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -61,6 +51,23 @@
       <updated>1692822062258</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
