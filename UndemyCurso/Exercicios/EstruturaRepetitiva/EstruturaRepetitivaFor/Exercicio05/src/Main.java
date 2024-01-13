@@ -4,33 +4,20 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n;
-        int xx;
-
-        System.out.print("Digite o valor: ");
-        xx = sc.nextInt();
-
-        System.out.print("Digite o valor: ");
-        n = sc.nextInt();
 
 
-        for(int i = 0; i<xx;i++){
+        System.out.print("Digite um número: ");
+        int n = sc.nextInt();
 
-            System.out.println("teste");
-            int x = sc.nextInt();
+        int fact = 1;
 
-            n = n*(x-1);
-            x = x-2;
-            n = n *x;
+        for(int i = 1;i<=n;i++){
+            fact = fact * i;
 
-            System.out.println(n);
         }
+        System.out.println(fact);
 
-
-
-
-
-
+        sc.close();
     }
 }
 /*
@@ -38,5 +25,4 @@ Ler um valor N. Calcular e escrever seu respectivo fatorial. Fatorial de N = N *
 Lembrando que, por definição, fatorial de 0 é 1.
 Correção: https://github.com/acenelio/nivelamento-java/blob/master/src/uri1153.java
 */
-//codigo incompleto
-//em fase de construção
+//thisiscleverson me deu a resposta.
