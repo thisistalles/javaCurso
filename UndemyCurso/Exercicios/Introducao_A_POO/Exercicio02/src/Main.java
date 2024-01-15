@@ -17,13 +17,16 @@ public class Main {
         System.out.print("Tax: ");
         employee.Tax = sc.nextDouble();
 
-        System.out.println("Employee: " + employee.name + ", " + employee.NetSalary());
+        System.out.println("");
+        System.out.printf("Employee: " + employee.name + ", $ %.2f%n", employee.NetSalary());
 
+        System.out.println("");
         System.out.print("Which percentage to increase salary? ");
         double percentage = sc.nextDouble();
         employee.IncreaseSalary(percentage);
 
-        System.out.printf("Updated data: ", employee.name, ", ", employee.GrossSalary);
+        System.out.println("");
+        System.out.printf("Updated data: " + employee.name + ", $ %.2f%n", employee.GrossSalary);
 
         sc.close();
     }
@@ -36,3 +39,4 @@ public class Main {
  *(somente o salário bruto é afetado pela porcentagem) e mostrar novamente os dados do funcionário.
  *Use a classe projetada abaixo.
  */
+//Observações: tive que rever a aula porque fiquei em duvida com o "public void IncreaseSalary(double percentage)

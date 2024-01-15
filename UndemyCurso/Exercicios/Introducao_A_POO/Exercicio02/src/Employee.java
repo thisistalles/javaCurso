@@ -4,13 +4,12 @@ public class Employee {
     double GrossSalary;
     double Tax;
 
-    public double NetSalary(){
-        return GrossSalary-Tax;
+    public double NetSalary() {
+        return GrossSalary - Tax;
     }
 
-    public void IncreaseSalary(double percentage){
-        double cal = (percentage/100) * GrossSalary;
-         
-
+    public void IncreaseSalary(double percentage) {
+        percentage = (percentage / 100) * GrossSalary;
+        this.GrossSalary = (GrossSalary - Tax) + percentage;
     }
 }
