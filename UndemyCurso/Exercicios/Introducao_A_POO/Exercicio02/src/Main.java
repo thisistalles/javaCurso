@@ -6,37 +6,44 @@ public class Main {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Employee employee = new Employee();
+        Student st = new Student();
 
-        System.out.print("Nome: ");
-        employee.name = sc.nextLine();
+        st.name = sc.nextLine();
 
-        System.out.print("Gross salary: ");
-        employee.GrossSalary = sc.nextDouble();
+        st.note1 = sc.nextDouble();
+        st.note2 = sc.nextDouble();
+        st.note3 = sc.nextDouble();
 
-        System.out.print("Tax: ");
-        employee.Tax = sc.nextDouble();
 
-        System.out.println("");
-        System.out.printf("Employee: " + employee.name + ", $ %.2f%n", employee.NetSalary());
 
-        System.out.println("");
-        System.out.print("Which percentage to increase salary? ");
-        double percentage = sc.nextDouble();
-        employee.IncreaseSalary(percentage);
 
-        System.out.println("");
-        System.out.printf("Updated data: " + employee.name + ", $ %.2f%n", employee.GrossSalary);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         sc.close();
     }
 }
 
+
 /*
- *Fazer um programa para ler os dados de um funcionário (nome, salário bruto e imposto).
- *Em seguida, mostrar os dados do funcionário (nome e salário líquido).
- *Em seguida, aumentar o salário do funcionário com base em uma porcentagem dada
- *(somente o salário bruto é afetado pela porcentagem) e mostrar novamente os dados do funcionário.
- *Use a classe projetada abaixo.
+ *Fazer um programa para ler o nome de um aluno e as três notas que ele obteve nos três trimestres do ano
+ *(primeiro trimestre vale 30 e o segundo e terceiro valem 35 cada). Ao final, mostrar qual a nota final do aluno no
+ *ano. Dizer também se o aluno está aprovado (PASS) ou não (FAILED) e, em caso negativo, quantos pontos faltam
+ *para o aluno obter o mínimo para ser aprovado (que é 60% da nota). Você deve criar uma classe Student para
+ *resolver este problema.
  */
-//Observações: tive que rever a aula porque fiquei em duvida com o "public void IncreaseSalary(double percentage)
