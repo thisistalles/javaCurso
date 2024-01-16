@@ -6,27 +6,28 @@ public class Student {
     public double note3;
     public double total;
 
-    public double finalGrade() {
+    public void finalGrade() {
         total = note1 + note2 + note3;
         if (total > 60) {
 
-            System.out.printf("FINAL GRADE = %.2f", total);
+            System.out.printf("FINAL GRADE = %.2f%n", total);
             System.out.println("PASS");
-
         } else {
-
             System.out.printf("FINAL GRADE = %.2f%n", total);
             System.out.println("FAILED");
 
             double missing = 60.00 - total;
             System.out.println("MISSING " + missing + " POINTS");
         }
-        return ;
+    }
+
+    public String showCase() {
+        finalGrade();
+        String i = "";
+        return i;
     }
 
     public String toString() {
-        return String.format(" %.2f ", finalGrade());
+        return showCase();
     }
-
-
 }
