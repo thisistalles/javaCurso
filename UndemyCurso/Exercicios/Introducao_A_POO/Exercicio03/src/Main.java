@@ -17,27 +17,6 @@ public class Main {
         System.out.println(st);
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         sc.close();
     }
 }
@@ -50,4 +29,4 @@ public class Main {
  *para o aluno obter o mínimo para ser aprovado (que é 60% da nota). Você deve criar uma classe Student para
  *resolver este problema.
  */
-//em produção
+//tive ajuda de thisiscleverson para algumas coisas;
