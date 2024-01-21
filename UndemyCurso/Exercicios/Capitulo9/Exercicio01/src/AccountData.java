@@ -1,18 +1,38 @@
 public class AccountData {
+    private static final double tax = 5.00;
+    private final int numberAccount;
     public String name;
-    public String resp;
-    private int numberAccount;
-    private double value;
+    private double balance;
 
 
-    public AccountData(String name, String resp, int numberAccount, double value) {
+    public AccountData(int numberAccount, String name, double initialValue) {
         this.numberAccount = numberAccount;
         this.name = name;
+        this.balance = initialValue;
+    }
 
-        if (this.resp != "n") {
-            this.value = value;
-        }
+    public double getBalance() {
+        return balance;
+    }
 
+    public void setBalance(double balance) {
+        this.balance += balance;
 
     }
+
+    public void withdraw(double withdraw) {
+        balance = balance - withdraw - tax;
+    }
+
+
+    public String toString() {
+        return numberAccount
+                + ", "
+                + "Holder: " + name
+                + ", "
+                + "Balance: $ "
+                + String.format("%.2f", balance);
+    }
+
+
 }
