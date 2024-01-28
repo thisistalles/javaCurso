@@ -43,7 +43,7 @@ public class Main {
         calculation = (quantityAge / vectAge.length) * 100;
 
         System.out.printf("Altura média: %.2f%n", avarage);
-        System.out.printf("Pessoas com menos de 16 anos: %.1f%n", calculation);
+        System.out.printf("Pessoas com menos de 16 anos: %.1f%%\n", calculation);
 
         for (int i = 0; i < n; i++) {
             if (vectAge[i] < 16) {
@@ -64,3 +64,4 @@ public class Main {
 
 //obs: consultei um codigo meu para ver como fazer o print imprimir "1,2..."
 //consultei o chatgpt so para saber como era a formula do "calculation"
+//consultei o resultado so para ver como colocar a "%" na linha 46
