@@ -13,18 +13,13 @@ public class Main {
         BankAccount clientec = new BankAccount(false, 0.00);
         BankAccount clientet = new BankAccount(false, 0.00);
 
-        clientec.OpenAccount("CP", "Cleverson E.", 0.00);
-        clientec.Deposit(1000.00);
-        clientec.Saque(150.00);
-        clientec.ClosedAccount();
-        clientec.Deposit(100.00);
-        clientec.Saque(150.00);
-        clientec.Mensal();
+        clientec.openAccount("CC", "Cleverson E.", 0.00);
+        clientec.saque(34.00);
+        clientec.mensal();
         System.out.println("-------------------------------------------");
-        clientet.OpenAccount("CC", "Talles R.", 0.00);
-        clientet.Saque(150.00);
-        clientet.ClosedAccount();
-
+        clientet.openAccount("CP", "Talles R.", 0.00);
+        clientet.saque(131.00);
+        clientet.mensal();
 
     }
 }

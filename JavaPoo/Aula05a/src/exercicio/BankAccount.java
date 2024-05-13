@@ -4,8 +4,6 @@ import java.util.Random;
 
 public class BankAccount {
 
-
-
     public int numAccount;
     protected String type = "";
     private String owner;
@@ -18,19 +16,19 @@ public class BankAccount {
         this.balance = balance = 0.00;
     }
 
-    private int NumConta() {
+    private int numberAccount() {
         Random random = new Random();
         return random.nextInt(9000) + 1000;
         //gpt
     }
 
 
-    public void OpenAccount(String type, String owner, double balance) {
+    public void openAccount(String type, String owner, double balance) {
 
         this.status = true;
         this.type = type;
         this.owner = owner;
-        this.numAccount = NumConta();
+        this.numAccount = numberAccount();
 
         double bonuscc = 50.00;
         double bonuscp = 150.00;
@@ -47,15 +45,15 @@ public class BankAccount {
         System.out.println("Número da conta: " + numAccount);
         System.out.println("Nome: " + owner);
         System.out.println("Tipo da conta: " + type);
-        Show_Balance();
+        show_Balance();
 
     }
-    public void Show_Balance(){
+    public void show_Balance(){
         System.out.println("Seu saldo é: " + this.balance);
 
     }
 
-    public void ClosedAccount() {
+    public void closedAccount() {
         if (this.balance > 0) {
             System.out.println("Você ainda tem R$" + this.balance + " em conta, Saque para poder fechar a conta.");
             return;
@@ -70,7 +68,7 @@ public class BankAccount {
 
     }
 
-    public void Deposit(double deposit) {
+    public void deposit(double deposit) {
         if (!this.status) {
             System.out.println("Abra uma conta para poder depositar!");
             return;
@@ -78,11 +76,11 @@ public class BankAccount {
 
         this.balance += deposit;
         System.out.println("Deposito de R$: " + deposit + " Realizado.");
-        Show_Balance();
+        show_Balance();
     }
 
 
-    public void Saque(double saque) {
+    public void saque(double saque) {
         if (!this.status) {
             System.out.println("Abra uma conta para poder sacar!");
             return;
@@ -91,7 +89,7 @@ public class BankAccount {
         if (saque > this.balance) {
             System.out.println("Valor a sacar: R$" + saque);
             System.out.println("Valor indisponivel para saque.");
-            Show_Balance();
+            show_Balance();
             return;
         }
 
@@ -99,11 +97,11 @@ public class BankAccount {
 
 
         System.out.println("Saque de R$" + saque + " realizado");
-        Show_Balance();
+        show_Balance();
 
     }
 
-    public void Mensal() {
+    public void mensal() {
 
         if (!this.status) {
             System.out.println("Abra uma conta para poder pagar a mensalidade!");
@@ -111,12 +109,20 @@ public class BankAccount {
         }
         double cc = 12.00;
         double cp = 20.00;
-        if(this.balance<cc || this.balance<cp ){
-            System.out.println("Você não tem saldo suficiente para pagar a mensalidade!");
-            Show_Balance();
-            return;
 
+        //thisiscleverson
+        if(this.type.equalsIgnoreCase("CC") && this.balance < cc ){
+            System.out.println("Você não tem saldo suficiente para pagar a mensalidade!");
+            show_Balance();
+            return;
         }
+        else if(this.type.equalsIgnoreCase("CP") && this.balance < cp){
+            System.out.println("Você não tem saldo suficiente para pagar a mensalidade!");
+            show_Balance();
+            return;
+        }
+        //thisiscleverson
+
 
         if (this.type.equalsIgnoreCase("CC")) {
             this.balance = this.balance - cc;
@@ -124,7 +130,7 @@ public class BankAccount {
             this.balance = this.balance - cp;
         }
         System.out.println("Mensalidade paga");
-        Show_Balance();
+        show_Balance();
 
 
     }
