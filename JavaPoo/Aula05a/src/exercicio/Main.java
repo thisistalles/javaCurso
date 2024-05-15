@@ -10,16 +10,25 @@ public class Main {
 
         System.out.println("Bem-Vindo ao ---TLBANK---");
 
-        BankAccount clientec = new BankAccount(false, 0.00);
-        BankAccount clientet = new BankAccount(false, 0.00);
+        BankAccount clientec = new BankAccount();
 
-        clientec.openAccount("CC", "Cleverson E.", 0.00);
-        clientec.saque(34.00);
+
+        System.out.print("Digite o seu nome: ");
+        clientec.setOwner(sc.nextLine());
+
+        System.out.print("Digite o tipo da conta (CC/CP): ");
+        clientec.setType(sc.next());
+
+        System.out.print("Digite o valor que você deseja depositar: ");
+        clientec.setBalance(sc.nextDouble());
+
+
+        clientec.openAccount();
+        System.out.print("Digite o valor para saque: ");
+        clientec.saque(sc.nextDouble());
         clientec.mensal();
-        System.out.println("-------------------------------------------");
-        clientet.openAccount("CP", "Talles R.", 0.00);
-        clientet.saque(131.00);
-        clientet.mensal();
+        clientec.closedAccount();
+
 
     }
 }
