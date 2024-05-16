@@ -19,7 +19,7 @@ public class BankAccount {
         return numAccount;
     }
 
-    public String getType() {
+    public String getTypeAccount() {
         return type;
     }
 
@@ -51,51 +51,66 @@ public class BankAccount {
         this.status = status;
     }
 
+
+    public void menu() {
+        System.out.println("------MENU------");
+        System.out.println("Digite o número da operação que deseja realizar: ");
+        System.out.println("1 -Abrir Conta");
+        System.out.println("2- Depositar");
+        System.out.println("3- Sacar");
+        System.out.println("4- Pagar Mensalidade");
+        System.out.println("5- Fechar conta");
+        System.out.println("6- Fechar Menu");
+    }
+
     private int numberAccount() {
         Random random = new Random();
         return random.nextInt(9000) + 1000;
         //gpt
     }
 
-    public void show_Balance() {
+    public void showBalance() {
         System.out.println("Seu saldo é: " + getBalance());
     }
 
-    public void statusAccount() {
-        if (!isStatus()) {
-            System.out.println("Primeiro abra uma conta para poder realizar essa operação!");
-            return;
-        }
-    }
 
     public void openAccount() {
+        if (isStatus()) {
+            System.out.println("Você já possui uma conta aberta!");
+            return;
+        }
 
-        this.status = true;
-        this.type = getType();
+        setStatus(true);
+        this.type = getTypeAccount();
         this.owner = getOwner();
         this.numAccount = numberAccount();
 
-        double bonuscc = 50.00;
-        double bonuscp = 150.00;
-        double bonus;
+        double bonusCurrentAccount = 50.00;
+        double bonusSavingsAccount = 150.00;
+        double calcBonus;
 
         if (this.type.equalsIgnoreCase("cc")) {
 
-            bonus = balance + bonuscc;
-            setBalance(bonus);
-            System.out.println("Bonus de R$" + bonuscc + " depositado na sua conta");
+            calcBonus = balance + bonusCurrentAccount;
+            setBalance(calcBonus);
+            System.out.println("Bonus de R$" + bonusCurrentAccount + " depositado na sua conta");
+        } else if (this.type.equalsIgnoreCase("cp")) {
+            calcBonus = balance + bonusSavingsAccount;
+            setBalance(calcBonus);
+            System.out.println("Bonus de R$" + bonusSavingsAccount + " depositado na sua conta");
         } else {
-            bonus = balance + bonuscp;
-            setBalance(bonus);
-            System.out.println("Bonus de R$" + bonuscp + " depositado na sua conta");
+            System.out.println("Tipo de conta inválido");
+            setStatus(false);
+            return;
         }
+
         System.out.println("Número da conta: " + getNumAccount());
         System.out.println("Nome: " + getOwner());
-        System.out.println("Tipo da conta: " + getType());
-        show_Balance();
+        System.out.println("Tipo da conta: " + getTypeAccount());
+        showBalance();
+
 
     }
-
 
     public void closedAccount() {
         if (getBalance() > 0) {
@@ -113,63 +128,68 @@ public class BankAccount {
     }
 
     public void deposit(double deposit) {
-        statusAccount();
+        if (!isStatus()) {
+            System.out.println("Primeiro abra uma conta para poder realizar essa operação!");
+            return;
+        }
 
         setBalance(this.balance += deposit);
         System.out.println("Deposito de R$: " + deposit + " Realizado.");
-        show_Balance();
+        showBalance();
     }
 
 
     public void saque(double saque) {
-        statusAccount();
+        if (!isStatus()) {
+            System.out.println("Primeiro abra uma conta para poder realizar essa operação!");
+            return;
+        }
 
         if (saque > getBalance()) {
             System.out.println("Valor a sacar: R$" + saque);
             System.out.println("Valor indisponivel para saque.");
-            show_Balance();
+            showBalance();
             return;
         }
 
         setBalance(this.balance - saque);
 
-
         System.out.println("Saque de R$" + saque + " realizado");
-        show_Balance();
+        showBalance();
 
     }
 
     public void mensal() {
 
-        statusAccount();
+        if (!isStatus()) {
+            System.out.println("Primeiro abra uma conta para poder realizar essa operação!");
+            return;
+        }
 
-        double cc = 12.00;
-        double cp = 20.00;
+        double currentAccountFee = 12.00;
+        double savingsAccountFee = 20.00;
 
         //thisiscleverson
-        if (getType().equalsIgnoreCase("CC") && getBalance() < cc) {
+        if (getTypeAccount().equalsIgnoreCase("CC") && getBalance() < currentAccountFee) {
             System.out.println("Você não tem saldo suficiente para pagar a mensalidade!");
-            show_Balance();
+            showBalance();
             return;
-        } else if (getType().equalsIgnoreCase("CP") && getBalance() < cp) {
+        } else if (getTypeAccount().equalsIgnoreCase("CP") && getBalance() < savingsAccountFee) {
             System.out.println("Você não tem saldo suficiente para pagar a mensalidade!");
-            show_Balance();
+            showBalance();
             return;
         }
         //thisiscleverson
 
-
-        if (getType().equalsIgnoreCase("CC")) {
-            setBalance(this.balance - cc);
+        if (getTypeAccount().equalsIgnoreCase("CC")) {
+            setBalance(this.balance - currentAccountFee);
         } else {
-            setBalance(this.balance - cp);
+            setBalance(this.balance - savingsAccountFee);
         }
         System.out.println("Mensalidade paga");
-        show_Balance();
-
+        showBalance();
 
     }
-
 
 }
 

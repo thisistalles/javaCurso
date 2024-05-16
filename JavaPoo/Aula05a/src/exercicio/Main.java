@@ -10,25 +10,65 @@ public class Main {
 
         System.out.println("Bem-Vindo ao ---TLBANK---");
 
-        BankAccount clientec = new BankAccount();
+        BankAccount cliente = new BankAccount();
+
+        int i = 0;
+
+        do {
+            cliente.menu();
+            i = sc.nextInt();
+            System.out.println("----");
+
+            switch (i) {
+                case 1:
+                    sc.nextLine();
+                    System.out.print("Digite o seu nome: ");
+                    cliente.setOwner(sc.nextLine());
+
+                    System.out.print("Digite o tipo da conta (CC/CP): ");
+                    cliente.setType(sc.next());
+
+                    System.out.println("----");
+                    cliente.openAccount();
+                    System.out.println("----");
+
+                    break;
+                case 2:
+                    System.out.println("----");
+                    System.out.print("Digite o valor para deposito: ");
+                    cliente.deposit(sc.nextDouble());
+                    System.out.println("---");
+                    break;
+                case 3:
+                    System.out.println("----");
+                    System.out.print("Digite o valor para saque: ");
+                    cliente.saque(sc.nextDouble());
+                    System.out.println("---");
+                    break;
+                case 4:
+                    System.out.println("----");
+                    cliente.mensal();
+                    System.out.println("---");
+                    break;
+                case 5:
+                    System.out.println("----");
+                    cliente.closedAccount();
+                    System.out.println("---");
+                    break;
+                case 6:
+                    System.out.println("----");
+                    System.out.println("Fechando menu...");
+                    System.out.println("---");
+                    break;
+                default:
+                    System.out.println("----");
+                    System.out.println("Opção inválida. Tente novamente.");
+                    System.out.println("---");
+
+            }
 
 
-        System.out.print("Digite o seu nome: ");
-        clientec.setOwner(sc.nextLine());
-
-        System.out.print("Digite o tipo da conta (CC/CP): ");
-        clientec.setType(sc.next());
-
-        System.out.print("Digite o valor que você deseja depositar: ");
-        clientec.setBalance(sc.nextDouble());
-
-
-        clientec.openAccount();
-        System.out.print("Digite o valor para saque: ");
-        clientec.saque(sc.nextDouble());
-        clientec.mensal();
-        clientec.closedAccount();
-
+        } while (i != 6);
 
     }
 }
